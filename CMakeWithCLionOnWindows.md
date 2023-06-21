@@ -1,4 +1,7 @@
-# CMake、CLion与运行库导入-以Libuv为例
+# CMake与第三方库导入-以Libuv与CLion工程为例
+
+对于VS工程，使用CMake构建之后按照：https://learn.microsoft.com/zh-cn/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp?view=msvc-170 这个链接操作即可
+对于使用CMake的CLion工程，还需要进行导入与修改CMakeLists的几步操作
 
 # Build With VS
 在安装了Visual Studio之后，CMake GUI的默认编译器为VS，导出的动态运行时库通常会生成两个文件：一个是.lib（库导入文件），另一个是.dll（运行库本身）。这两个文件在动态链接过程中起着不同的作用
